@@ -34,6 +34,8 @@ dependencies:
   extended_text_field: ^0.4.4
   share: ^0.6.2+1
   tonic: ^0.2.3
+  parallax_image: ^0.3.1+1
+  font_awesome_flutter: ^8.5.0
 
 dev_dependencies:
   flutter_test:
@@ -46,9 +48,28 @@ dependency_overrides:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway/Raleway-Regular.ttf
+        - asset: assets/fonts/Raleway/Raleway-Italic.ttf
+          style: italic
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/Roboto_Mono/RobotoMono-Regular.ttf
+        - asset: assets/fonts/Roboto_Mono/RobotoMono-Bold.ttf
+          weight: 700
   assets:
     - assets/pages/
     - assets/images/
+    # assets-generator-begin
+    # assets/images/*
+    - assets/images/.DS_Store
+    - assets/images/app_store.png
+    - assets/images/favicon.ico
+    - assets/images/google_play.png
+    - assets/images/welcome.jpeg
+    # assets-generator-end
     - assets/posts/
     - assets/images/apps/the_pitch_pipe/
     - assets/images/apps/the_pocket_piano/
