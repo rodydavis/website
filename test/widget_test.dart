@@ -11,10 +11,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:personal_website/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  // testWidgets('Finds App Title', (WidgetTester tester) async {
+  //   // Build our app and trigger a frame.
+  //   await tester.pumpWidget(MyApp());
 
-    expect(find.text('1'), findsNothing);
-  });
+  //   await tester.pumpAndSettle();
+
+  //   expect(find.text('Rody Davis'), findsOneWidget);
+  // });
 }
