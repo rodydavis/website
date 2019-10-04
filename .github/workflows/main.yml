@@ -38,12 +38,6 @@ jobs:
           channel: 'dev'
     - run: flutter pub get
     - run: flutter config --enable-web
-    - run: flutter build web
-    - name: Create a Web Archive
-      uses: ncipollo/release-action@v1
-      with:
-          name: dist
-          path: dist
   deploy:
     name: Deploy
     needs: build
@@ -54,7 +48,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: dist
+          name: build/web
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
