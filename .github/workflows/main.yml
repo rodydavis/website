@@ -38,6 +38,10 @@ jobs:
           channel: 'dev'
     - run: flutter pub get
     - run: flutter config --enable-web
+    - uses: actions/upload-artifact@master
+      with:
+        name: build_web
+        path: build/web
   deploy:
     name: Deploy
     needs: build
@@ -48,7 +52,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: build/web
+          name: build_web
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
