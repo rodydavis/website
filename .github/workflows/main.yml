@@ -1,5 +1,7 @@
-on: push
 name: Test, Build and Release apk
+
+on: [push]
+
 jobs:
   build:
     name: Build APK
@@ -11,7 +13,7 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
       with:
-        flutter-version: '1.7.8+hotfix.4'
+          channel: 'dev'
     - run: flutter pub get
     - run: flutter test
     - run: flutter build apk --debug --split-per-abi
@@ -19,5 +21,5 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
-        token: ${{ secrets.TOKEN }}
+        token: ${{ secrets.FIREBASE_TOKEN }}
         
