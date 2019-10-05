@@ -38,6 +38,7 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         commit: master
+        tag: v1
         artifacts: "build/web/"
         token: ${{ secrets.GITHUB_TOKEN }}
   deploy:
