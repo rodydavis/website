@@ -14,11 +14,11 @@ jobs:
           channel: 'dev'
     - run: flutter pub get
     - run: flutter test
-    - run: flutter build apk --debug --split-per-abi
-    - name: Upload APKs
+    - run: flutter build ios
+    - name: Upload iPA
       uses: ncipollo/release-action@v1
       with:
         commit: master
         tag: v1
-        artifacts: "build/app/outputs/apk/debug/*.apk"
+        artifacts: "build/ios/iphoneos/Runner.app"
         token: ${{ secrets.GITHUB_TOKEN }}
