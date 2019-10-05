@@ -1,10 +1,5 @@
 name: Build and Deploy Website
-
-on:
-  push:
-    tags:
-    - '*'
-
+on: push
 jobs:
 #   build:
 #     name: Build APK
