@@ -36,9 +36,9 @@ jobs:
     - run: flutter build web
     - name: Archive Production Artifact
       uses: actions/upload-artifact@master
-        with:
-          name: web-build
-          path: build/web
+      with:
+        name: web-build
+        path: build/web
   deploy:
     name: Deploy
     needs: build
