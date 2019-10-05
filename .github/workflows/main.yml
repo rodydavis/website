@@ -34,13 +34,18 @@ jobs:
     - run: flutter pub get
     - run: flutter config --enable-web
     - run: flutter build web
-    - name: Upload Build
-      uses: ncipollo/release-action@v1
-      with:
-        commit: master
-        tag: v1
-        artifacts: "build/web/"
-        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Archive Production Artifact
+      uses: actions/upload-artifact@master
+        with:
+          name: web-build
+          path: build/web/
+#     - name: Upload Build
+#       uses: ncipollo/release-action@v1
+#       with:
+#         commit: master
+#         tag: v1
+#         artifacts: "build/web/"
+#         token: ${{ secrets.GITHUB_TOKEN }}
   deploy:
     name: Deploy
     needs: build
@@ -51,7 +56,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: build_web
+          name: web-build
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
