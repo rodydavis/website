@@ -38,14 +38,7 @@ jobs:
       uses: actions/upload-artifact@master
         with:
           name: web-build
-          path: build/web/
-#     - name: Upload Build
-#       uses: ncipollo/release-action@v1
-#       with:
-#         commit: master
-#         tag: v1
-#         artifacts: "build/web/"
-#         token: ${{ secrets.GITHUB_TOKEN }}
+          path: build/web
   deploy:
     name: Deploy
     needs: build
