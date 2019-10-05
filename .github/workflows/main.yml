@@ -1,9 +1,9 @@
--name: Build and Deploy Website
+name: Build and Deploy Website
 
 on:
   push:
-    branches:
-      - master
+    tags:
+    - '*'
 
 jobs:
 #   build:
@@ -39,11 +39,11 @@ jobs:
     - run: flutter pub get
     - run: flutter config --enable-web
     - run: flutter build web
-    - name: Create a Web Archive
+    - name: Upload Build
       uses: ncipollo/release-action@v1
       with:
-          name: dist
-          path: dist
+        artifacts: "build/web/"
+        token: ${{ secrets.GITHUB_TOKEN }}
   deploy:
     name: Deploy
     needs: build
@@ -54,7 +54,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          name: dist
+          name: build_web
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
