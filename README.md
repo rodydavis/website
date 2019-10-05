@@ -1,6 +1,6 @@
 # personal_website
 
-A new Flutter project
+A new Flutter project.
 
 ## Deploy
 
