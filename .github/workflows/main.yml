@@ -37,6 +37,7 @@ jobs:
     - name: Upload Build
       uses: ncipollo/release-action@v1
       with:
+        commit: master
         artifacts: "build/web/"
         token: ${{ secrets.GITHUB_TOKEN }}
   deploy:
