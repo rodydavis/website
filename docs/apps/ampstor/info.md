@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ampstor
-permalink: /apps/ampstor
+permalink: /apps/ampstor/
 ---
 
 Create Beautiful AMP Stories. [More Info](https://ampstor.co) on how to use Ampstor. Flutter web editor avaliable [here](https://ampstor.web.app).

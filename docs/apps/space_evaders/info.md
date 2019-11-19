@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Space Evaders
-permalink: /apps/space_evaders
+permalink: /apps/space_evaders/
 ---
 
 ## About

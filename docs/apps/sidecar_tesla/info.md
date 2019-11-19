@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sidecar for Tesla
-permalink: /apps/sidecar_tesla
+permalink: /apps/sidecar_tesla/
 ---
 
 Great third party app to control your [Tesla](https://tesla.com) car.

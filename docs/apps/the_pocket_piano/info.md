@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Pocket Piano
-permalink: /apps/the_pocket_piano
+permalink: /apps/the_pocket_piano/
 ---
 
 <iframe src='https://pocketpiano.app' width='100%' height='400'></iframe>

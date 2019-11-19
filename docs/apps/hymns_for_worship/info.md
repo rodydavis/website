@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hymns for Worship
-permalink: /apps/hymns_for_worship
+permalink: /apps/hymns_for_worship/
 ---
 
 Companion app for [RJ Stevens Music](https://www.rjstevensmusic.com).

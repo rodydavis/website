@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Pitch Pipe
-permalink: /apps/the_pitch_pipe
+permalink: /apps/the_pitch_pipe/
 ---
 
 <iframe src='https://pitchpipe.app' height='600' width='100%'></iframe>
