@@ -1,8 +1,4 @@
 name: Build and Deploy Website
-on:
-  push:
-    branches:
-      - master
 jobs:
   build:
     name: Build
