@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Flutter + Fastlane (One Click Beta) | Rody Davis</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Flutter + Fastlane (One Click Beta)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Flutter + Fastlane (One Click Beta)" />
+<meta property="og:description" content="Flutter + Fastlane (One Click Beta)" />
+<link rel="canonical" href="https://rodydavis.com/flutter-one-click-release/" />
+<meta property="og:url" content="https://rodydavis.com/flutter-one-click-release/" />
+<meta property="og:site_name" content="Rody Davis" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-11T07:00:00-07:00" />
+<script type="application/ld+json">
+{"dateModified":"2019-03-11T07:00:00-07:00","datePublished":"2019-03-11T07:00:00-07:00","url":"https://rodydavis.com/flutter-one-click-release/","mainEntityOfPage":{"@type":"WebPage","@id":"https://rodydavis.com/flutter-one-click-release/"},"description":"Flutter + Fastlane (One Click Beta)","@type":"BlogPosting","headline":"Flutter + Fastlane (One Click Beta)","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rodydavis.com/feed.xml" title="Rody Davis" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Rody Davis</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/apps/">Apps</a><a class="page-link" href="/dev/">Dev</a><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Flutter + Fastlane (One Click Beta)</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-03-11T07:00:00-07:00" itemprop="datePublished">Mar 11, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="flutter--fastlane-one-click-beta">Flutter + Fastlane (One Click Beta)</h1>
+
+<h2 id="1-install-flutter">1. Install Flutter</h2>
+
+<p><a href="https://flutter.io/get-started/install/">Download Flutter</a></p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/website-b7fa0.appspot.com/o/images%2Fm3Fw4A56wih07gQ3sQW9rDXHKA13%2Fflutterlogo.jpg?alt=media&amp;token=217b093b-dc7a-4433-8f3b-9f1496b3ade2" alt="flutter" /></p>
+
+<h2 id="2-create-new-flutter-project">2. Create new Flutter Project</h2>
+
+<p>If you are pretty new to Flutter you can check out <a href="https://flutter.io/get-started/codelab/">this useful guide</a> on how to create a new project step by step.</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/website-b7fa0.appspot.com/o/images%2Fm3Fw4A56wih07gQ3sQW9rDXHKA13%2Fcross-platform.jpg?alt=media&amp;token=790f7aac-a472-41f2-9b0e-f2ebec42c62b" alt="cross-platform" /></p>
+
+<h2 id="3-create-app-in-itunes-connect">3. Create App in iTunes Connect</h2>
+
+<p>If you are not familiar with iTunes Connect, check out <a href="https://clearbridgemobile.com/how-to-submit-an-app-to-the-app-store/">this article</a> for getting started and setting up your first app for the App Store.</p>
+
+<h2 id="4-create-app-in-google-play">4. Create App in Google Play</h2>
+
+<p>Setting up an app in the Google Play Console can be tricky, make sure to check out the <a href="https://support.google.com/googleplay/android-developer/answer/113469?hl=en-GB">official reference</a> and <a href="https://medium.com/mindorks/upload-your-first-android-app-on-play-store-step-by-step-ee0de9123ac0">this guide</a> if you are having trouble.</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/website-b7fa0.appspot.com/o/images%2Fm3Fw4A56wih07gQ3sQW9rDXHKA13%2Ffastlane.jpg?alt=media&amp;token=8b850110-c10b-40e4-aee9-696d9a4557e3" alt="fastlane" /></p>
+
+<h2 id="5-navigate-to-project--ios-and-setup-fastlane">5. Navigate to Project &gt; ios and Setup Fastlane</h2>
+
+<p><a href="https://docs.fastlane.tools/getting-started/ios/setup/">Reference</a></p>
+
+<h2 id="6-navigate-to-project--android-and-setup-fastlane">6. Navigate to Project &gt; android and Setup Fastlane</h2>
+
+<p><a href="https://docs.fastlane.tools/getting-started/android/setup/">Reference</a></p>
+
+<h2 id="7-update-fastlane-fastfiles-for-ios-and-android-and-change-accordingly-for-each-platform">7. Update Fastlane Fastfiles for iOS and Android and Change accordingly for each platform</h2>
+
+<ul>
+  <li>
+    <p>Make sure to change <YOUR PROJECT="" PATH=""> to the path to your project in Finder.</YOUR></p>
+  </li>
+  <li>
+    <p>Only copy the correct platform code for each Fastfile. For example, <code class="highlighter-rouge">default_platform(:ios)</code> for iOS and `default_platform(:android)1st for Android.</p>
+  </li>
+</ul>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">update_fastlane</span>
+
+<span class="n">default_platform</span><span class="p">(</span><span class="ss">:ios</span><span class="p">)</span>
+
+<span class="n">platform</span> <span class="ss">:ios</span> <span class="k">do</span>
+  <span class="n">desc</span> <span class="s2">"Push a new beta build to TestFlight"</span>
+  <span class="n">lane</span> <span class="ss">:beta</span> <span class="k">do</span>
+    <span class="n">increment_build_number</span><span class="p">(</span><span class="ss">xcodeproj: </span><span class="s2">"Runner.xcodeproj"</span><span class="p">)</span>
+    <span class="n">build_app</span><span class="p">(</span><span class="ss">workspace: </span><span class="s2">"Runner.xcworkspace"</span><span class="p">,</span> <span class="ss">scheme: </span><span class="s2">"Runner"</span><span class="p">)</span>
+    <span class="n">upload_to_testflight</span><span class="p">(</span><span class="ss">skip_waiting_for_build_processing: </span><span class="kp">true</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="n">desc</span> <span class="s2">"Push a new release build to the App Store"</span>
+  <span class="n">lane</span> <span class="ss">:release</span> <span class="k">do</span>  
+    <span class="n">increment_build_number</span><span class="p">(</span><span class="ss">xcodeproj: </span><span class="s2">"Runner.xcodeproj"</span><span class="p">)</span>
+    <span class="n">build_app</span><span class="p">(</span><span class="ss">workspace: </span><span class="s2">"Runner.xcworkspace"</span><span class="p">,</span> <span class="ss">scheme: </span><span class="s2">"Runner"</span><span class="p">)</span>
+    <span class="n">upload_to_app_store</span><span class="p">(</span><span class="ss">submit_for_review: </span><span class="kp">true</span><span class="p">,</span>
+                            <span class="ss">automatic_release: </span><span class="kp">true</span><span class="p">,</span>
+                            <span class="ss">skip_screenshots: </span><span class="kp">true</span><span class="p">,</span>
+                            <span class="ss">force: </span><span class="kp">true</span><span class="p">,</span>
+                            <span class="ss">skip_waiting_for_build_processing: </span><span class="kp">true</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+
+  
+<span class="sr">//</span><span class="o">&lt;</span><span class="no">YOUR</span> <span class="no">PROJECT</span> <span class="no">PATH</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">android</span> <span class="o">&gt;</span> <span class="n">fastlane</span> <span class="o">&gt;</span> <span class="no">Fastfile</span>
+<span class="n">default_platform</span><span class="p">(</span><span class="ss">:android</span><span class="p">)</span>
+
+<span class="n">platform</span> <span class="ss">:android</span> <span class="k">do</span>
+  <span class="n">desc</span> <span class="s2">"Runs all the tests"</span>
+  <span class="n">lane</span> <span class="ss">:test</span> <span class="k">do</span>
+    <span class="n">gradle</span><span class="p">(</span><span class="ss">task: </span><span class="s2">"test"</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="n">desc</span> <span class="s2">"Submit a new Build to Beta"</span>
+  <span class="n">lane</span> <span class="ss">:beta</span> <span class="k">do</span>
+    <span class="n">gradle</span><span class="p">(</span><span class="ss">task: </span><span class="s1">'clean'</span><span class="p">)</span>
+    <span class="n">increment_version_code</span>
+    <span class="n">sh</span> <span class="s2">"cd &lt;YOUR PROJECT PATH&gt; &amp;&amp; flutter build apk"</span>
+    <span class="n">upload_to_play_store</span><span class="p">(</span>
+      <span class="ss">track: </span><span class="s1">'beta'</span><span class="p">,</span>
+      <span class="ss">apk: </span><span class="s1">'../build/app/outputs/apk/release/app-release.apk'</span><span class="p">,</span>
+      <span class="ss">skip_upload_screenshots: </span><span class="kp">true</span><span class="p">,</span>
+      <span class="ss">skip_upload_images: </span><span class="kp">true</span>
+    <span class="p">)</span>
+    <span class="c1"># crashlytics</span>
+  <span class="k">end</span>
+
+  <span class="n">desc</span> <span class="s2">"Deploy a new version to the Google Play"</span>
+  <span class="n">lane</span> <span class="ss">:deploy</span> <span class="k">do</span>
+    <span class="n">gradle</span><span class="p">(</span><span class="ss">task: </span><span class="s1">'clean'</span><span class="p">)</span>
+    <span class="n">increment_version_code</span>
+    <span class="n">sh</span> <span class="s2">"cd &lt;YOUR PROJECT PATH&gt; &amp;&amp; flutter build apk"</span>
+    <span class="n">upload_to_play_store</span><span class="p">(</span>
+      <span class="ss">track: </span><span class="s1">'production'</span><span class="p">,</span>
+      <span class="ss">apk: </span><span class="s1">'../build/app/outputs/apk/release/app-release.apk'</span><span class="p">,</span>
+      <span class="ss">skip_upload_screenshots: </span><span class="kp">true</span><span class="p">,</span>
+      <span class="ss">skip_upload_images: </span><span class="kp">true</span>
+    <span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<ul>
+  <li>For Android <code class="highlighter-rouge">increment_version_code</code> install here.</li>
+</ul>
+
+<p>Sometimes it will fail and you will need to run:</p>
+
+<p><code class="highlighter-rouge">bundle exec fastlane add_plugin increment_version_code</code></p>
+
+<ul>
+  <li>For iOS <code class="highlighter-rouge">increment_build_number</code> set up Generic Versioning by enabling the agvtool.</li>
+</ul>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/website-b7fa0.appspot.com/o/images%2Fm3Fw4A56wih07gQ3sQW9rDXHKA13%2Fversion-bump.gif?alt=media&amp;token=e50e159d-d88a-476b-84fc-cff4e8c6c0a0" alt="version-bump" /></p>
+
+<p><a href="https://medium.com/xcblog/agvtool-automating-ios-build-and-version-numbers-454cab6f1bbe">Source</a></p>
+
+<h2 id="8-metadata-optional">8. Metadata (Optional)</h2>
+
+<ul>
+  <li>For iOS you can have Fastlane download all your apps existing metadata including screenshots from iTunes Connect. In terminal navigate to the project and run.</li>
+</ul>
+
+<p><code class="highlighter-rouge">fastlane deliver download_metadata &amp;&amp; fastlane deliver download_screenshots</code></p>
+
+<ul>
+  <li>For Android you can use <a href="https://docs.fastlane.tools/actions/supply/">Fastlane Supply</a>.</li>
+</ul>
+
+<h2 id="9-open-automator">9. Open Automator</h2>
+
+<p>Right now everything is working just by the command line. If you navigate to your project in terminal by adding “cd “ and dragging in the project folder and hitting Enter, you can type “cd ios &amp;&amp; fastlane beta” or “cd android &amp;&amp; fastlane beta” and both will run fastlane.</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/website-b7fa0.appspot.com/o/images%2Fm3Fw4A56wih07gQ3sQW9rDXHKA13%2Fterminal-drag.gif?alt=media&amp;token=bfd1ece8-93a6-443d-82cd-3522953f6e28" alt="terminal" /></p>
+
+<p>If you want to be able to submit your app to Google Play and the App Store with one click we will be using <a href="http://www.applegazette.com/os-x/getting-started-automator-workflows-mac/">Automator</a>. Create a new Automator Application. And Search for “Ask for Confirmation” and “Run AppleScript” and drag in.</p>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/website-b7fa0.appspot.com/o/images%2Fm3Fw4A56wih07gQ3sQW9rDXHKA13%2Fautomator.jpg?alt=media&amp;token=496c8843-7f50-497b-9359-0a4353523eef" alt="fastlane" /></p>
+
+<p>Here is the Script for beta and release. You will need to create a Automator Application for both Beta and Release for each app you want automated. Save it where ever you want and create an Alias to be but on the Desktop.</p>
+
+<ul>
+  <li>Make sure to change <YOUR PROJECT="" PATH=""> to the path to your project in Finder</YOUR></li>
+</ul>
+
+<p>Hint: I have my automator application save in the Github Repo of my project for versioning and easy access for different projects.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sr">//</span><span class="no">Beta</span>
+<span class="n">on</span> <span class="n">run</span> <span class="p">{</span><span class="n">input</span><span class="p">,</span> <span class="n">parameters</span><span class="p">}</span>
+	<span class="n">tell</span> <span class="n">application</span> <span class="s2">"Terminal"</span>
+		<span class="n">activate</span>
+		<span class="k">do</span> <span class="n">script</span> <span class="s2">"cd &lt;YOUR PROJECT PATH&gt;/android &amp;&amp; fastlane beta &amp;&amp; cd &lt;YOUR PROJECT PATH&gt;/ios &amp;&amp; fastlane beta"</span>
+	<span class="k">end</span> <span class="n">tell</span>
+	<span class="n">tell</span> <span class="n">application</span> <span class="s2">"System Events"</span>
+		<span class="n">try</span>
+			<span class="n">set</span> <span class="n">visible</span> <span class="n">of</span> <span class="n">application</span> <span class="n">process</span> <span class="s2">"Terminal"</span> <span class="n">to</span> <span class="kp">false</span>
+		<span class="k">end</span> <span class="n">try</span>
+	<span class="k">end</span> <span class="n">tell</span>
+<span class="k">end</span> <span class="n">run</span>
+
+<span class="sr">//</span><span class="no">Release</span>
+<span class="n">on</span> <span class="n">run</span> <span class="p">{</span><span class="n">input</span><span class="p">,</span> <span class="n">parameters</span><span class="p">}</span>
+	<span class="n">tell</span> <span class="n">application</span> <span class="s2">"Terminal"</span>
+		<span class="n">activate</span>
+		<span class="k">do</span> <span class="n">script</span> <span class="s2">"cd &lt;YOUR PROJECT PATH&gt;/android &amp;&amp; fastlane deploy &amp;&amp; cd &lt;YOUR PROJECT PATH&gt;/ios &amp;&amp; fastlane release"</span>
+	<span class="k">end</span> <span class="n">tell</span>
+	<span class="n">tell</span> <span class="n">application</span> <span class="s2">"System Events"</span>
+		<span class="n">try</span>
+			<span class="n">set</span> <span class="n">visible</span> <span class="n">of</span> <span class="n">application</span> <span class="n">process</span> <span class="s2">"Terminal"</span> <span class="n">to</span> <span class="kp">false</span>
+		<span class="k">end</span> <span class="n">try</span>
+	<span class="k">end</span> <span class="n">tell</span>
+<span class="k">end</span> <span class="n">run</span>
+</code></pre></div></div>
+
+<h2 id="10-try-it-out">10. Try It Out!</h2>
+
+<p>Everything should be working now. If you double click on the automator application you should get a confirmation pop up to release the app. The Script will run terminal in the background and you can stay focused on developing awesome flutter applications. If you want to see the progress on fastlane uploading your apps you can click on the terminal icon and the terminal window will reappear. Thanks for reading and please reach out for any questions you have!</p>
+
+<flutter_widget src="/demos/test_1" width="400" height="700" />
+
+
+  </div><a class="u-url" href="/flutter-one-click-release/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Rody Davis</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Rody Davis</li><li><a class="u-email" href="mailto:rody.davis.jr@gmail.com">rody.davis.jr@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rodydavis"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rodydavis</span></a></li><li><a href="https://www.twitter.com/rodydavis"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">rodydavis</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Flutter powered development made easy.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

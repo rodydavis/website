@@ -1,4 +1,8 @@
-// service-worker.js
+                        importScripts("/assets/js/workbox-v3.6.2/workbox-sw.js");
+            workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.2"});
+
+            self.__precacheManifest = [{"url":"//index.html","revision":"9f22d4e84acb9e45c102f6eb539e13c6"},{"url":"//one-codebase-many-places/","revision":"c9deb2c9a1cd5bba3e497669939824f0"},{"url":"//automate-flutter-apps/","revision":"896365bf8fb779389a52a989ff792ff5"},{"url":"//2019/03/12/making-a-piano/","revision":"c473fa3bbc43eae77dbc713fa8d3607a"},{"url":"//flutter-one-click-release/","revision":"6f95d5db07224f0c62d6d7e0eaf7bc22"},{"url":"//the-pitch-pipe/","revision":"4f70a224917831cceee0c379ade5b2c5"}];
+            // service-worker.js
 
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
