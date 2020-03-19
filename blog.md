@@ -3,6 +3,8 @@ layout: page
 title: Blog
 permalink: /blog/
 ---
+
+<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
  
  {% for post in site.posts %}
   <article>

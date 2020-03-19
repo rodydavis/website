@@ -6,9 +6,15 @@ permalink: /dev/
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-Here are all my projects I am working on and are in progress.
+## Summary
+
+These are all the apps that I have worked on and created since I have been a developer. All but one of the apps are built with [Flutter](https://flutter.dev).
+
+{% include apps.html %}
 
 ## Projects
+
+Here are all my projects I am working on and are in progress.
 
 | Name                  | Pub                                                                                                                                | Stars                                                                                                                                                                                                                                                 |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,3 +54,5 @@ Here are all my projects I am working on and are in progress.
 | flutter_everywhere    |                                                                                                                                    | <a class="github-button" href="https://github.com/rodydavis/flutter_everywhere" data-icon="octicon-star" data-show-count="true" aria-label="Star rodydavis/https://github.com/rodydavis/flutter_everywhere on GitHub">Star</a>                        |
 | navigation_rail    |                                                                                                                                    | <a class="github-button" href="https://github.com/rodydavis/navigation_rail" data-icon="octicon-star" data-show-count="true" aria-label="Star rodydavis/https://github.com/rodydavis/navigation_rail on GitHub">Star</a>                        |
 | settings_manager    |                                                                                                                                    | <a class="github-button" href="https://github.com/rodydavis/settings_manager" data-icon="octicon-star" data-show-count="true" aria-label="Star rodydavis/https://github.com/rodydavis/settings_manager on GitHub">Star</a>                        |
+
+[Privacy Policy](/privacy/index.html)
