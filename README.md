@@ -1,4 +1,7 @@
-# website
-Personal Website
+# personal_website
 
-Github Site: https://rodydavis.github.io/website/
+A new Flutter project.
+
+## Deploy
+
+- `flutter clean && flutter build web && firebase deploy --only hosting`

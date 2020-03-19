@@ -68,6 +68,7 @@ permalink: '/:title/'
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages: 
+- blog.md
 - apps.md
 - dev.md
 - about.md
@@ -79,6 +80,7 @@ plugins:
   - jekyll-menus
   - jekyll-feed
   - jekyll-amp-pwa-plugin
+  - jekyll-redirect-from
 
 pwa:
   sw_src_filepath: service-worker.js # Optional
