@@ -37,6 +37,7 @@ header_pages:
 - about.md
 # - privacy_policy.md
 
+
 # Build settings
 theme: minima
 plugins:
